@@ -1,0 +1,9 @@
+s=int(input("enter no of stars: "))
+l=int(input("enter no of line: "))
+p=int(input("enter no of plots: "))
+print()
+for i in range(p):
+    for j in range (l-i):
+        print("*"*s)
+    print(s*j+s)
+    print("-------")

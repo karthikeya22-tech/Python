@@ -1,0 +1,28 @@
+c="INDIA"  #complete variable
+class ace:
+    coll="ACE"  #class variable
+    def give_details(self,a,b,c,d):  #a,b,c,d local variable
+        self.total=a+b+c  #instance variable
+        self.name=d
+    def display(self):
+        print("1.NAME:",self.name)
+        print("2.MARKS:",self.total)
+        print("3.COUNTRY:",c)
+        print("4.COLLEGE:",ace.coll)
+class bvrit:   #creating class
+    coll="BVRIT"
+    def give_details(self,a,b,c,d): #methods of class 
+        self.total=a+b+c
+        self.name=d
+    def display(self):
+        print("1.NAME:",self.name)
+        print("2.MARKS:",self.total)
+        print("3.COUNTRY:",c)
+        print("4.COLLEGE:",bvrit.coll)
+        
+a=ace()  #creating object
+a.give_details(20,30,40,"Vijay") 
+a.display()
+b=bvrit()
+b.give_details(30,40,50,"Pavi")
+b.display()

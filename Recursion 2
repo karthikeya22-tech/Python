@@ -1,0 +1,8 @@
+def ABC(a):
+    if a==1:
+        return
+    a-=1
+    ABC(a)
+    print("Hello")
+    ABC(a)
+ABC(5)

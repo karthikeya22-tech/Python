@@ -1,0 +1,7 @@
+def Karthikeya(a):
+    if a==10:
+        return
+    print(a, end=" ")
+    Karthikeya(a+1)
+    print(a,end=" ")
+Karthikeya(1)

@@ -1,0 +1,20 @@
+#infinite args
+def abc(*args):
+    sum=0
+    for i in args:
+        sum=sum+i
+    print(sum)
+abc(20,30)
+abc(2,6,45,7)
+
+#default argument
+def ace(name="Akshay"):
+    print(name)
+ace("Pravallika")
+ace("Karthikeya")
+ace()
+
+#keyword argument
+def a(**kwargs):
+    print(kwargs)
+a(name="gill",score=125)

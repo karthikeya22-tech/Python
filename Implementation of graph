@@ -1,0 +1,19 @@
+class Graph:
+    def __init__(self,v):
+        self.adj=[[] for i in range(v)]
+    def add_edge(self,a,b):
+        self.adj[a].append(b)
+        self.adj[b].append(a)
+
+    def display(self):
+        for i in range(len(self.adj)):
+            print("Node{}:".format(i),end=" ")
+            for j in self.adj[i]:
+                print(j,end="-->")
+            print()
+a=Graph(5)
+a.add_edge(0,1)
+a.add_edge(1,2)
+a.add_edge(2,4)
+a.add_edge(4,3)
+a.display()
